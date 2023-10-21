@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/Netflix.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"  href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../css/netflix.css">
+    <title>Netflix</title>
+</head>
+
+<body class="netflix-background">
+
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../img/Inicio.png" alt=""></a>
+            <a href="netflix.html"><img src="../img/netflix.png" alt=""></a>
+            <a href="amazon_prime_video.html"><img src="../img/amazon.png" alt=""></a>
+            <a href="disney.html"><img src="../img/disney.png" alt=""></a>
+            <a href="hbo_max.html"><img src="../img/hbo.png" alt=""></a>
+            <a href="formulario.html"><img src="../img/formulario-de-contacto.png" alt=""></a>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <main>
+
+        <div class="titulo-netflix">
+            <video src="../videos/intro_netflix.mp4" muted="" autoplay="" loop=""></video>
+        </div>
+
+
+        <section class="contenido">
+            <div>
+                <div>
+                    <h1>¿Qué hay para ver en Netflix?</h1>
+
+                    <p>El catálogo de Netflix es sumamente amplio y además va variando mes a mes con nuevos estrenos y
+                        cambiando la programación. Podrás disfrutar de series, películas, documentales, docuseries y
+                        más, pasando por todos los géneros: acción, aventuras, comedias, infantiles, dramas, musicales,
+                        thrillers, TV shows, cine independiente y producciones nacionales.</p>
+                </div>
+
+                <div>
+                    <h2>Las mejores series que tiene Netflix</h2>
+
+                    <ul class="lista-peliculas">
+                        <li>
+                            <i class="fa-solid fa-video"></i> ONE PIECE: Temporada 1.
+                            <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup1')">Ver más</button>
+                                        
+                            <div id="popup1" class="popup">
+                                            
+                        <!-- Título y subtítulos -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/1.jpg">
+                        <h1>ONE PIECE</h1>
+                        <h3>Temporada 1</h3>
+                        <h5>Acción | Aventura | Comedia | Episodios: 9 </h5>
+                                                    
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer1')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer1" class="popupTrailer">
+                        
+                        <iframe src="https://www.youtube.com/embed/JoO7TGG2Kms?si=jACSCesK019VadQO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer1')">Atrás</button>
+                        
+                        </div>
+                                
+                        <!-- Sinopsis -->
+                        <p>Acompañado de su ecléctica tripulación, el joven pirata Monkey D. Luffy emprende un viaje ebusca de un tesoro legendario en esta adaptación del popular manga.</p>
+                                                    
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup1')">Cerrar</button>
+                                                    
+                            </div>
+                        </li>
+                                    
+                        <li>
+                        <i class="fa-solid fa-video"></i> Un lugar para soñar: Temporada 5.
+                        <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup2')">Ver más</button>
+                                    
+                            <div id="popup2" class="popup">
+                                            
+                        <!-- Título y subtítulo -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/2.jpg">
+                        <h1>Un lugar para soñar</h1>
+                        <h3>Temporada 5</h3>
+                        <h5>Romance | Drama | Episodios: 10 </h5>
+                                    
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer2')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer2" class="popupTrailer">
+                        
+                        <iframe src="https://www.youtube.com/embed/_XlGfHGFeYo?si=CaWqQkJlIT_FrsrH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer2')">Atrás</button>
+                        
+                        </div>
+                                    
+                        <!-- Sinopsis -->
+                        <p>Una enfermera practicante se muda a un pueblito del norte de California buscando tranquilidad, pero encuentra algo (y alguien) que la moviliza.</p>
+                                    
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix"  onclick="cerrarPopup('popup2')">Cerrar</button>
+                                        
+                            </div>
+                        </li>
+                        
+                        <li>
+                        <i class="fa-solid fa-video"></i> ¿Quién es Erin Carter?: Miniserie.
+                        <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup3')">Ver más</button>
+                        
+                            <div id="popup3" class="popup">
+                        
+                        <!-- Título y subtítulo -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/3.jpg">
+                        <h1>¿Quién es Erin Carter?</h1>
+                        <h3>Miniserie</h3>
+                        <h5>Acción | Aventura | Crimen | Episodios: 7</h5>
+                            
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer3')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer3" class="popupTrailer">
+                        
+                        <iframe src="https://www.youtube.com/embed/k5ynDb6p5tk?si=9C4i-mFn3JdwLz9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer3')">Atrás</button>
+                        
+                        </div>
+                            
+                        <!-- Sinopsis -->
+                        <p>Una mujer inglesa lleva una vida apacible en Barcelona hasta que un robo a mano armada en un supermercado termina exponiendo su pasado secreto.. y violento.</p>
+                            
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup3')">Cerrar</button>
+                            
+                            </div>
+                        </li>
+                        
+                        <li>
+                        <i class="fa-solid fa-video"></i> Top Boy: Temporada 3.
+                        <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup4')">Ver más</button>
+                        
+                            <div id="popup4" class="popup">
+                        
+                        <!-- Título y subtítulo -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/4.jpg">
+                        <h1>Top Boy</h1>
+                        <h3>Temporada 3</h3>
+                        <h5>Drama | Crimen | Suspenso | Episodios: 6</h5>
+                            
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer4')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer4" class="popupTrailer">
+                        
+                        <iframe src="https://www.youtube.com/embed/_qU5LEGXerY?si=51pl2k7YaMsVcze_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer4')">Atrás</button>
+                        
+                        </div>
+                            
+                        <!-- Sinopsis -->
+                        <p>Las calles de Londres cortan y cicatrizan dejando mapas de sangre en los márgenes. Tres desandan el laberinto de las drogas: dos viejos conocidos y uno joven y sediento.</p>
+                            
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup4')">Cerrar</button>
+                            
+                            </div>
+                        </li>
+                        
+                        <li>
+                        <i class="fa-solid fa-video"></i> Selling The OC: Temporada 2.
+                        <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup5')">Ver más</button>
+                        
+                            <div id="popup5" class="popup">
+                        
+                        <!-- Título y subtítulo -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/5.jpg">
+                        <h1>Selling The OC</h1>
+                        <h3>Temporada 2</h3>
+                        <h5>Reality Show | Episodios: 8</h5>
+                            
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer5')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer5" class="popupTrailer">
+                        
+                        <iframe src="https://www.youtube.com/embed/iHihGCrreTU?si=r-Z2-F6LB-v6RCnP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer5')">Atrás</button>
+                        
+                        </div>
+                            
+                        <!-- Sinopsis -->
+                        <p>El Grupo Oppenheim se expande al condado de Orange, donde un nuevo equipo inmobiliario exhibe lujosas propiedades frente al mar y grandes personalidades agitan las aguas.</p>
+                            
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup5')">Cerrar</button>
+                            
+                            </div>
+                        </li>
+                        
+                        <li>
+                        <i class="fa-solid fa-video"></i> Misiones de espionaje: Temporada 1.
+                        <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup6')">Ver más</button>
+                        
+                            <div id="popup6" class="popup">
+                        
+                        <!-- Título y subtítulo -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/6.jpg">
+                        <h1>Misiones de Espionaje</h1>
+                        <h3>Temporada 1</h3>
+                        <h5>Documental | Episodios: 8</h5>
+                            
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer6')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer6" class="popupTrailer">
+                        
+                        <iframe src="https://www.youtube.com/embed/0N0R50cu-P0?si=S4msqZyFJAxgFFu5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer6')">Atrás</button>
+                        
+                        </div>
+                            
+                        <!-- Sinopsis -->
+                        <p>Agentes de inteligencia, desde el MI6 hasta la CIA, comparten historias de espionaje, campañas de la Guerra Fría y golpes de Estado llevados a cabo por agentes encubiertos.</p>
+                            
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup6')">Cerrar</button>
+                            
+                            </div>
+                        </li>
+                        
+                        <li>
+                        <i class="fa-solid fa-video"></i> Surviving Summer: Temporada 2.
+                        <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup7')">Ver más</button>
+                        
+                            <div id="popup7" class="popup">
+                        
+                        <!-- Título y subtítulo -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/7.jpg">
+                        <h1>Surviving Summer</h1>
+                        <h3>Temporada 2</h3>
+                        <h5>Drama | Familia | Episodios: 8</h5>
+                            
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer7')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer7" class="popupTrailer">
+                        
+                        <iframe width="410" height="355" src="https://www.youtube.com/embed/BWmyVK09CZ4?si=0x70UvFB3S-jziCj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer7')">Atrás</button>
+                        
+                        </div>
+                        
+                        <!-- Sinopsis -->
+                        <p>Expulsada de la escuela y exiliada a Australia, una rebelde adolescente de Nueva York causa revuelo en el círculo íntimo de un joven surfista y siembra el caos a su paso.</p>
+                            
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup7')">Cerrar</button>
+                            
+                            </div>
+                        </li>
+                        
+                        <li>
+                        <i class="fa-solid fa-video"></i> Glow Up: Temporada 5.
+                        <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup8')">Ver más</button>
+                        
+                            <div id="popup8" class="popup">
+                        
+                        <!-- Título y subtítulo -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/8.jpg">
+                        <h1>Glow Up</h1>
+                        <h3>Temporada 5</h3>
+                        <h5>Programa de concurso | Reality Show | Episodios: 8 </h5>
+                            
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer8')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer8" class="popupTrailer">
+                        
+                        <iframe width="410" height="355" src="https://www.youtube.com/embed/Hxgh41OE18o?si=n_XNCn2PH8vdQuMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer8')">Atrás</button>
+                        
+                        </div>
+                            
+                        <!-- Sinopsis -->
+                        <p>Un talentoso grupo de aspirantes a maquilladores intenta demostrar su potencial a los profesionales de la industria en esta competición organizada por Stacey Dooley.</p>
+                            
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup8')">Cerrar</button>
+                            
+                            </div>
+                        </li>
+                        
+                        <li>
+                        <i class="fa-solid fa-video"></i> Inside the World's Toughest Prisons: Temporada 7.
+                        <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup9')">Ver más</button>
+                        
+                            <div id="popup9" class="popup">
+                        
+                        <!-- Título y subtítulo -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/9.jpg">
+                        <h1>Inside the World's Toughest Prisons</h1>
+                        <h3>Temporada 7</h3>
+                        <h5>Documental | Episodios: 4</h5>
+                            
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer9')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer9" class="popupTrailer">
+                        
+                        <iframe width="410" height="355" src="https://www.youtube.com/embed/_1wvmUXLAlA?si=DISBu8EoNk-bZNN7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer9')">Atrás</button>
+                        
+                        </div>
+                        
+                        <!-- Sinopsis -->
+                        <p>Imagínese estar en la cárcel. Ahora imagina vivir en un país extranjero. ¿Da miedo? Paul Connelly te lleva al interior de estas cárceles, mostrando las condiciones de los internos y los guardias. Nunca verás la prisión de la misma manera.</p>
+                            
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup9')">Cerrar</button>
+                            
+                            </div>
+                        </li>
+                        
+                        <li>
+                        <i class="fa-solid fa-video"></i> Predadores: Temporada 1.
+                        <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup10')">Ver más</button>
+                        
+                            <div id="popup10" class="popup">
+                        
+                        <!-- Título y subtítulo -->
+                        <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Series/10.jpg">
+                        <h1>Predadores</h1>
+                        <h3>Temporada 1</h3>
+                        <h5>Documental | Episodios: 5</h5>
+                            
+                        <!-- Botón de tráiler -->
+                        <button class="btn-ver-netflix" onclick="abrirTrailer('trailer10')"> Ver Tráiler
+                        </button>
+                                
+                        <div id="trailer10" class="popupTrailer">
+                        
+                        <iframe width="410" height="355" src="https://www.youtube.com/embed/IppeDxHHf-o?si=0_ok3CZfiBTVWtgj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                        <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer10')">Atrás</button>
+                        
+                        </div>
+                            
+                        <!-- Sinopsis -->
+                        <p>Descubre el mundo a través de los ojos de guepardos, osos polares y varios de los depredadores más feroces del mundo en su lucha por sobrevivir a las adversidades.</p>
+                            
+                        <!-- Botón para cerrar -->
+                        <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup10')">Cerrar</button>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>         
+        </section>                        
+
+
+                <div class="peliculas-recomendadas">
+                    <div class="contenedor-titulo-controles"></div>
+                    <div class="indicadores">
+                    </div>
+
+                    <div class="contenedor-principal">
+
+                        <button role="button" id="flecha-izquierda" class="flecha-izquierda">   
+                        <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                    
+                    <div class="contenedor-carousel">
+                        <div class="carousel">
+
+                            <div class="pelicula">
+                               <img src="../img/Netflix_Series/Netflix_1.jpeg" alt="">
+                               <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/80217863" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+                    
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Series/Netflix_2.jpeg" alt="">
+                                 <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/80240027" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+                    
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Series/Netflix_3.jpeg" alt="">
+                                 <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/81476887" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+                    
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Series/Netflix_4.jpeg" alt="">
+                                 <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/80217669" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+                    
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Series/Netflix_5.jpeg" alt="">
+                                 <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/81447330" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+                    
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Series/Netflix_6.jpeg" alt="">
+                                 <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/81474104" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+                    
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Series/Netflix_7.jpeg" alt="">
+                                 <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/81032078" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+                    
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Series/Netflix_8.jpeg" alt="">
+                                 <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/81075536" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+                    
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Series/Netflix_9.jpeg" alt="">
+                                 <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/80116922" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+                    
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Series/Netflix_10.jpeg" alt="">
+                                 <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/81319177" target="_blank" class="enlace-ver-pelicula-serie">Ver Serie</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <button role="button" id="flecha-derecha" class="flecha-derecha">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       
+     <section class="contenido">
+                    <div>
+
+                <h2>Las películas mas vistas de Netflix</h2>
+                <ul class="lista-peliculas">
+        <li>
+    <i class="fa-solid fa-video"></i> La probabilidad estadística del amor a primera vista.
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup11')">Ver más</button>
+                
+    <div id="popup11" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/1.jpg">
+    <h1>La probabilidad estadística del amor a primera vista</h1>
+    <h5>Drama | Romance | 1h 31min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer11')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer11" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/50bLw9WitvY?si=la8EldGGJjzXQciK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer11')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>En un vuelo a Londres, dos desconocidos forman un vínculo, pero la mala suerte termina separándolos. Una reunión parece imposible..., pero el amor no conoce de barreras.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup11')">Cerrar</button>
+                            
+    </div>
+
+</li>
+
+<li>
+    <i class="fa-solid fa-video"></i> ¡No estás invitada a mi bat mitzvá!
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup12')">Ver más</button>
+                
+    <div id="popup12" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/2.jpg">
+    <h1>¡No estás invitada a mi bat mitzvá!</h1>
+    <h5>Comedia | 1h 43min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer12')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer12" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/Td90WXh2SM0?si=WKWVIPU3kRcie8PX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer12')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>Sigue a Stacy quien sueña con tener bat mitzvah épico, pero una discusión con su mejor amiga comienza a desmoronar sus planes.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup12')">Cerrar</button>
+                            
+    </div>
+    
+</li>
+
+<li>
+    <i class="fa-solid fa-video"></i> El pájaro loco.
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup13')">Ver más</button>
+                
+    <div id="popup13" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/3.jpg">
+    <h1>El pájaro loco</h1>
+    <h5>Aventura | Comedia | Familia | 1h 31min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer13')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer13" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/tyH4NqcQd8c?si=K2s1cBNtTZ9_PHf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer13')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>Un pájaro pelirrojo se mete en una guerra territorial con un abogado de la ciudad que quiere demoler su casa para construir la suya.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup13')">Cerrar</button>
+                            
+    </div>
+</li>
+
+<li>
+    <i class="fa-solid fa-video"></i> El Grinch.
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup14')">Ver más</button>
+                
+    <div id="popup14" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/4.jpg">
+    <h1>El Grinch</h1>
+    <h5>Animación | Comedia | Familia | 1h 25min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer14')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer14" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/2bYPq0MPQ18?si=mUzKS0R-8Cb2DE3-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer14')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>El Grinch es un cínico cascarrabias que se propone robar la Navidad a los habitantes de Whoville haciéndose pasar por Santa Claus. Sin embargo, el desbordante espíritu navideño de una niña le hace cambiar de opinión.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup14')">Cerrar</button>
+                            
+    </div>
+</li>
+
+<li>
+    <i class="fa-solid fa-video"></i> Cincuenta sombras liberadas.
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup15')">Ver más</button>
+                
+    <div id="popup15" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/5.jpg">
+    <h1>Cincuenta sombras liberadas</h1>
+    <h5>Drama | Romance | Suspenso | 1h 45min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer15')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer15" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/Dec6stTA75I?si=NiS6UkBR-KWsdB2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer15')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>Los recién casados Christian Grey y Anastasia disfrutan de su relación y su vida llena de lujos creyendo que han dejado atrás los problemas del pasado. Sin embargo, cuando Ana empieza a relajarse, aparecen nuevas amenazas que ponen en peligro su felicidad y su relación con el millonario Christian Grey.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup15')">Cerrar</button>
+                            
+    </div>
+</li>
+
+<li>
+    <i class="fa-solid fa-video"></i> Los Croods.
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup16')">Ver más</button>
+                
+    <div id="popup16" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/6.jpg">
+    <h1>Los Croods</h1>
+    <h5>Animación | Acción | Aventura | 1h 38min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer16')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer16" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/h-woGn1FCM0?si=--55bUTJ0SwGfdRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer16')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>Tras la destrucción de su cueva, una familia de cavernícolas debe recorrer un mundo fantástico desconocido con la ayuda de un ingenioso niño.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup16')">Cerrar</button>
+                            
+    </div>
+</li>
+
+<li>
+    <i class="fa-solid fa-video"></i> Para toda la vida.
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup17')">Ver más</button>
+                
+    <div id="popup17" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/7.jpg">
+    <h1>Para toda la vida</h1>
+    <h5>Drama | Romance | 1h 31min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer17')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer17" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/c06UdG7ydaI?si=w1RLsrebZ6cj3XAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer17')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>Los planes de boda de una pareja descarrilan cuando el novio es diagnosticado con cáncer de hígado.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup17')">Cerrar</button>
+                            
+    </div>
+</li>
+
+<li>
+    <i class="fa-solid fa-video"></i> Leatherface: La máscara del terror.
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup18')">Ver más</button>
+                
+    <div id="popup18" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/8.jpg">
+    <h1>Leatherface: La máscara del terror</h1>
+    <h5>Crimen | Terror | Suspenso | 1h 30min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer18')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer18" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/BKlrY6LPdVA?si=QP9N3aB59Kuxcyj7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer18')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>Un arquitecto adicto al trabajo encuentra un control remoto universal que le permite avanzar y retroceder a diferentes partes de su vida. Las complicaciones surgen cuando el control remoto comienza a anular sus elecciones.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup18')">Cerrar</button>
+                            
+    </div>
+</li>
+
+<li>
+    <i class="fa-solid fa-video"></i> Un jefe en pañales.
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup19')">Ver más</button>
+                
+    <div id="popup19" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/9.jpg">
+    <h1>Un jefe en pañales</h1>
+    <h5>Animación | Aventura | Comedia | 1h 37min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer19')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer19" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/SXpVk9uKL8I?si=fQMu3pqY0aLsVJqF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer19')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>Un bebé que viste traje y lleva un maletín se une a su hermano de 7 años para detener la malvada conspiración del director ejecutivo de Puppy Co.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup19')">Cerrar</button>
+                            
+    </div>
+</li>
+
+<li>
+    <i class="fa-solid fa-video"></i> Jack Reacher: Sin regreso.
+    <button class="btn-abrir-netflix"  onclick="mostrarPopup('popup20')">Ver más</button>
+                
+    <div id="popup20" class="popup">
+                    
+    <!-- Título y subtítulos -->
+    <img class="imagen-seriesypelis" src="../img/Portadas_Netflix/Pelis/10.PNG">
+    <h1>Jack Reacher: Sin regreso</h1>
+    <h5>Acción | Crimen | Drama | 1h 58min</h5>
+                            
+    <!-- Botón de tráiler -->
+    <button class="btn-ver-netflix" onclick="abrirTrailer('trailer20')"> Ver Tráiler
+    </button>
+        
+    <div id="trailer20" class="popupTrailer">
+    
+    <iframe width="410" height="355" src="https://www.youtube.com/embed/Mgdp3ia3B0s?si=T_uw4-bx69vz9ohi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    <button class="btn-atras-netflix" onclick="cerrarTrailer('trailer20')">Atrás</button>
+    
+    </div>
+        
+    <!-- Sinopsis -->
+    <p>Jack Reacher debe revelar la verdad tras una conspiración gubernamental para limpiar su nombre. Dado a la fuga, Reacher desvela un secreto sobre su pasado que podría cambiar su vida para siempre.</p>
+                            
+    <!-- Botón para cerrar -->
+    <button class="btn-cerrar-netflix" onclick="cerrarPopup('popup20')">Cerrar</button>
+                            
+    </div>
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+            <div class="peliculas-recomendadas">
+                <div class="contenedor-titulo-controles"></div>
+                <div class="indicadores">
+                </div>
+
+                <div class="contenedor-principal">
+
+                    <button role="button" id="flecha-izquierda" class="flecha-izquierda">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+
+                    <div class="contenedor-carousel">
+                        <div class="carousel">
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_1.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/81504327" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_2.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/81416306" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_3.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/us-es/title/80225034" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_4.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/es/title/80996790" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_5.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="#" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_6.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/70143241" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_7.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="#" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_8.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/80200655" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_9.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/80146758" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                            <div class="pelicula">
+                                <img src="../img/Netflix_Pelis/Netflix_10.jpeg" alt="">
+                                <div class="capa-pelicula-serie">
+                                <a href="https://www.netflix.com/ar/title/80106762" target="_blank" class="enlace-ver-pelicula-serie">Ver Película</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <button role="button1" id="flecha-derecha" class="flecha-derecha">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+
+                 </div>
+            </div>
+         </div>
+
+    </main>
+
+    <!-- Pie de página -->
+        
+        <footer>
+        <!-- Botón de suscripción -->
+            <button class="btn-suscripcion-netflix">
+                <a href="https://www.netflix.com/ar/" class="btn-enlace-netflix" target="_blank">Suscripción</a>
+            </button> 
+        </footer>
+
+    <!-- TRAER ICONOS DE  fontawesome-->
+    <script src="https://kit.fontawesome.com/b75777cf68.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
