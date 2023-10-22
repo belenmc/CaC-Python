@@ -1,0 +1,83 @@
+/* ------------ LETRA ------------ */
+@font-face {
+	font-family:"BebasNeue";
+	src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+	font-family:"Red";
+	src: url('../fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family:"Inclusive";
+	src: url('../fonts/Inclusive_Sans/InclusiveSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Itim";
+    src: url('../fonts/Itim/Itim-Regular.ttf');
+}
+
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: "Red";
+    text-decoration: none;
+}
+
+nav a img {
+	padding-left: 1vw;
+	width: 4vw;
+	height: 7vh;
+	border-color: black;
+	backdrop-filter: blur(5px);
+}
+
+/* ----- ----- ----- Información ----- ----- ----- */
+
+.informacion-background{
+    background-image: url(../img/img-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.contenido h1{
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+    font-size: 2.7vw;
+    /* background-color: #952f57;
+    border-radius: 5% 5% 50% 5%; */
+}
+
+.tabla{
+    margin-bottom: 2.5vw;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.encabezado-tabla{
+    background-color:#170a24ff;
+    color: #634174ff;
+    font-size: 1.7vw;
+    letter-spacing: 0.2vw;
+}
+
+tr{
+    font-size: 1.4vw;
+}
+
+p{
+    font-size: 1.6vw;
+    margin-bottom: 2vw;
+}
+
+ul{
+    font-size: 1.8vw;
+}
+
+
+
+

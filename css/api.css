@@ -1,0 +1,65 @@
+/* Estilo para el contenedor de resultados */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Estilo para cada tarjeta de película */
+#card {
+    width: 18rem;
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+#card:hover {
+    transform: scale(1.05);
+}
+
+#card img {
+    height: 400px;
+}
+
+/* Estilo para el botón */
+#btn {
+    margin-top: 10px;
+}
+
+/* Estilo para el encabezado */
+#title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Estilo para el input de búsqueda */
+#searchBar {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Estilo para la imagen del logotipo */
+#logo img {
+    max-width: 100%;
+}
+
+/* Estilo para el encabezado de la sección de búsqueda */
+#search h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* Estilo para la imagen del logotipo */
+#logo {
+    text-align: center; /* Centra horizontalmente el contenido del contenedor */
+}
+
+#logo img {
+    max-width: 200px; /* Ajusta el ancho máximo según tus preferencias */
+    display: block; /* Quita el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra horizontalmente la imagen dentro del contenedor */
+}
