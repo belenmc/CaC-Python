@@ -1,0 +1,186 @@
+/* ------------ LETRA ------------ */
+@font-face {
+	font-family:"BebasNeue";
+	src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+	font-family:"Red";
+	src: url('../fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family:"Inclusive";
+	src: url('../fonts/Inclusive_Sans/InclusiveSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Itim";
+    src: url('../fonts/Itim/Itim-Regular.ttf');
+}
+
+/* Selector universal */
+* {
+	margin: 0%;
+	/*Elimina todo margen que trae por defecto*/
+	padding: 0%;
+	/*Elimina todo relleno que trae por defecto*/
+	box-sizing: border-box;
+	font-family: "Red";
+    text-decoration: none;
+}
+
+.btn-header{
+    display: flex;
+}
+
+.btn-inicio{
+    color:#fff;
+    font-size: 1vw;
+    text-align: center;
+    padding-left: 1vw;
+    cursor: pointer;
+}
+
+.btn-inicio:hover{
+    color: #fa68c9;
+}
+
+/* ----- ----- ----- Para todas las plataformas ----- ----- ----- */
+
+.contenido h1{
+	font-size: 3.5vw;
+	margin-top: 5%;
+	font-family: "Itim";
+}
+
+.contenido p{
+	font-size: 1.7vw;
+}
+
+h2{
+	font-size: 2.4vw;
+	margin-top: 4%;
+    margin-bottom: 2%;
+    
+}
+
+li{
+    font-size: 1.6vw;
+}
+
+
+/* Quitar viñetas y agregar padding a las listas de películas */
+.lista-peliculas {
+	padding-left: 2vw;
+	list-style-type: none;
+}
+
+/* Agregar padding a los encabezados del menú de navegación */
+nav a img {
+	padding-left: 1vw;
+	width: 4.4vw;
+	height: 7vh;
+	border-color: black;
+	backdrop-filter: blur(5px);
+}
+
+/* Agrega margen alrededor del contenido */
+.contenido {
+	margin: 2vw;
+	color: #ffffff;
+	/* backdrop-filter: blur(5px); */
+}
+
+/* Estilo para los elementos de la lista */
+.lista-peliculas li {
+	padding-top: 0.7vh;
+}
+
+main h1 {
+	padding-bottom: none;
+}
+
+/* Aplicar padding a los títulos */
+section h1 {
+	padding-top: 1vh;
+	padding-bottom: 2vh;
+}
+
+/* Agregar padding a las tablas */
+.tabla {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+
+/* --- Pop-Up --- */
+
+.popup{
+    display: none;
+	position:fixed;
+    width: 60vw;
+    padding: 2vw 5vh;
+    font-size: 1.7vw;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+    backdrop-filter: blur(10px);
+	box-shadow: 0 2px 4px rgba(219, 186, 186, 0.986);
+    border-radius: 10px;
+    max-width: 100%;
+    text-align: justify; 
+	z-index: 2;
+}
+
+.popup h1{
+    font-size: 2.5vw;
+    font-family: "BebasNeue";
+    letter-spacing: 0.2vw;
+}
+
+.popup h3{
+    font-size: 2vw;
+}
+
+.popup h5{
+	margin-top: 2%;
+    font-size: 1.4vw;
+}
+
+.popup p{
+	margin-top: 3%;
+    font-size: 1.3vw;
+}
+
+.popupTrailer{
+    display: none;
+	position:absolute;
+    width: 37.2vw;
+    height: 66vh;
+    padding: 2vw 7.5vh;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+    background-color: #000000;
+    border-radius: 10px;
+	
+}
+
+.imagen-seriesypelis{
+    width: 13vw;
+	height: 35vh;
+    float: left;
+	margin-top: 2%;
+    margin-right: 1vw;
+}
+
+iframe{
+    width: 30vw;
+    height: 53vh;
+}
+
+.href-enlaces{
+	color: #fff;
+}
+
